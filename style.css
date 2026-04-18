@@ -1,0 +1,378 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+  scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+/* HEADER FIXO */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1f2a5a; /* nova cor mais próxima do banner */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  z-index: 1000;
+}
+.header h2 {
+  color: white;
+}
+
+nav i {
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+nav i:hover {
+  color: #a855f7;
+  transform: scale(1.2);
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #cfcfcf;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+/* BANNER */
+.banner {
+  height: 100vh;
+  background: url("assent/img/Banner.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px;
+  
+}
+
+.banner-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TEXTO */
+.texto {
+  max-width: 600px;
+  margin-left: 80px; /* aumenta o espaço da esquerda */
+}
+
+
+.texto h1 {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.2;
+    color: white;
+
+}
+
+.subtexto {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #cfcfcf;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+    font-size: 16px;
+
+  background: #6C63FF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+
+/* SEÇÕES */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.sobre {
+  background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+  padding: 120px 20px 160px;
+  text-align: center;
+  position: relative;
+}
+.sobre::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: transparent; /* mesma cor da próxima seção */
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+.sobre-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #1f2a5a;
+}
+
+.sobre p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* HABILIDADES */
+.habilidades {
+  position: relative;
+  background: url("assent/img/fundo4.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; /* 🔥 efeito profissional */
+  padding: 150px 20px;
+  color: white;
+}
+
+
+.habilidades::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5); /* 👈 AQUI você controla a cor */
+}
+
+.habilidades * {
+  position: relative;
+  z-index: 1;
+}
+
+.habilidades h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1f2a5a;
+}
+
+.skill {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+
+
+.barra {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.skill-fill {
+  width: 0;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #2d0a6b, #493f98);
+  transition: 1.5s ease;
+}
+
+.skill p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1f2a5a;
+}
+
+/* FORM */
+input, select, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+}
+
+
+.formulario {
+  background: linear-gradient(to bottom, #f8f9ff, #ffffff);
+  padding: 120px 20px;
+}
+
+.formulario h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #1f2a5a;
+}
+
+form {
+  background: white;
+  padding: 40px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/**/
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #6C63FF;
+  outline: none;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*rodape*/
+
+footer {
+  background: #1f2a5a;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a i {
+  margin-right: 5px;
+}
+
+footer a:hover {
+  color: #a855f7;
+}
+
+
+/*CSS RESPONSIVO*/
+
+/* BOTÃO MENU */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  .header {
+    padding: 20px;
+  }
+
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #1f2a5a;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .texto {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .texto h1 {
+    font-size: 32px;
+  }
+
+  .banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sobre-container {
+    padding: 0 10px;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  input, select, button {
+    width: 90%;
+  }
+
+}

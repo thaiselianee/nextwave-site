@@ -1,6 +1,6 @@
 # NextWave - Landing Page
 
-Projeto desenvolvido como teste prático para vaga de estágio Frontend / Full-Stack.
+Projeto desenvolvido como teste prático.
 
 ## 🚀 Tecnologias utilizadas
 

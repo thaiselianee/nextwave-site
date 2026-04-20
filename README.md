@@ -2,6 +2,7 @@
 
 Projeto desenvolvido como teste prático.
 
+
 ## 🚀 Tecnologias utilizadas
 
 * HTML5
@@ -45,4 +46,4 @@ Para utilizar:
 
 ## 📬 Contato
 
-Projeto desenvolvido por Thais Eliane.
+Por: Thais Eliane
